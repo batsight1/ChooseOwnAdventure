@@ -37,7 +37,6 @@ def PrintActions(_actions):
 
 #current = GameLoop(current)
 #current = GameLoop(current)
-current = 92
 #GameLoop
 while not gameover:
     PrintPassage(current)
