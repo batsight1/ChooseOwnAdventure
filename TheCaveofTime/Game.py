@@ -1,5 +1,6 @@
 from JSON_Stuff import*
 import os
+
 #T#his is where the Game is played
 #Note:Make your own input function
 def cls(): #To Clear Console
@@ -10,6 +11,20 @@ EventList = {}
 EventList = ReadDictJSON("data") #Load Events
 current = 2
 gameover = False
+
+#Input Handling
+def InputValid(_input):
+    if(_input in ["q",'s','l','r',"",'1','2','3','4','5','6','7','8','9']):
+        return True
+    else:
+        return False
+
+def InputLoop(_input):
+    while not InputValid(_input):
+        print("Invalid")
+        _input = input("Input: ")
+        InputLoop(_input)
+    return _input
 
 #Methods
 def GetEvent(i):
@@ -35,25 +50,43 @@ def PrintActions(_actions):
         for i in range(len(_actions)):
             print(str(i+1)+") If you "+GetActionText(_actions[i]))
 
-#current = GameLoop(current)
-#current = GameLoop(current)
-#GameLoop
-while not gameover:
-    PrintPassage(current)
-    if EventIsEnd(GetEvent(current)): #Check if it is The End
-        gameover = True
-        break
-    PrintActions(GetActions(current))
-    ans = input("Action: ")
-    if(ans=="q"):
-        break
-    elif(ans==""):
-        if(len(GetActions(current))==1):
-            ans = 0
-    else:
-        ans = int(ans) - 1
-    current = GetActionTo(GetAction(GetEvent(current),ans))
-    cls()
+def GameLoop():
+    global current
+    while not gameover:
+        PrintPassage(current)
+        if EventIsEnd(GetEvent(current)): #Check if it is The End
+            break
+        PrintActions(GetActions(current))
+
+        ans = InputLoop(input("Input: "))
+        if(ans=="q"): #Quit
+            print("Game Quit")
+            break
+        elif(ans in ['1','2','3','4','5','6','7','8','9']):
+            ans = int(ans) - 1
+            if(ans>=len(GetActions(current))):
+                break
+            _action = GetAction(GetEvent(current),ans)
+            current = GetActionTo(_action)
+        elif(ans=="s"): #Save
+            break
+        elif(ans=="l"): #Load
+            break
+        elif(ans=="r"): #Restart
+            current = 2
+        elif(ans==""): #Continue
+            if(len(GetActions(current))==1):
+                ans = 0
+                _action = GetAction(GetEvent(current),ans)
+                current = GetActionTo(_action)
+            else:
+                break
+        else:
+            break
+        
+        cls()
+
+GameLoop()
 
 if(gameover):
     print("This is the End")
