@@ -1,0 +1,88 @@
+2	4	decide to start back home
+2	5	decide to wait
+4	8	continue toward the ranch
+4	10	go back into the cave
+5	6	seek shelter
+5	16	brave the freezing wind to see more of the world about you
+6	22	accept the ride back to the castle
+6	114	decline the invitation and try to find your way back into the Cave of Time
+8	17	enter the cave
+8	18	continue on
+10	20	take the tunnel leading to the left
+10	61	take the tunnel leading to the right
+10	21	walk outside the cave again
+11	12	jump
+11	13	do not
+12	66	accept
+12	78	decide to travel on
+13	14	mount the horse and ride off
+13	15	ask the King for refuge
+16	24	enter the left-hand passageway
+16	25	enter the right-hand passageway
+17	26	stay and try to make friends
+17	28	try to run for it
+18	29	jump down on the wooly mammoth
+18	30	continue on foot
+20	93
+21	33	follow the right branch
+21	35	follow the left branch
+22	36	insist you are telling the trush
+22	37	try to make up a plausible story
+24	38	hide from view
+24	40	go up to the spaceship
+25	43	say, "Because I want to be back with my family and friends,"
+25	41	say, "Because I don't want to take a chance of being in a bad time,"
+25	44	say, "I would like to try  another time, but only if you can assume me that I will eventually get back to my own time,"
+25	45	say, "Who are you?"
+26	46	go with the cave people
+26	47	try to find your way back to the Cave of Time
+28	51
+29	52	jump to the ground
+29	53	hang on
+30	54	take the first tunnel that you can
+30	92	take a tunnel further on
+32	58	try to swim through the underwater tunnel
+32	64	decide to wait
+33	68	try to find the captain and warn him that the ship will sink
+33	79	go back down the ladder and try to return to the cave
+35	76	try to help Louisa find the way back to where she entered the cave
+35	80	suggest she try one of the tunne;s with you as a way out
+36	11
+37	11
+38	82	go up the wall builders
+38	87	return to the crevasse
+40	115	do
+40	83	do not
+47	49	run fon for the cave
+47	50	prepare to fight
+49	25
+50	81
+54	94	climb on the train
+54	98	go to the farm
+54	101	go back into the tunnel in hopes of finding your way back to your own time
+56	57	stay in "the perfect society"
+56	60	try to return to the Cave of Time
+58	62	remain with your new friends
+58	63	journey inland
+61	104	tell him you come from a future time
+61	106	try to make up a believable story
+64	102
+66	70	try
+66	74	do not try
+70	72	decide to break the egg open
+70	103	keep it in your closet until you have a chance to get scientific advice
+79	86	explore the passageway
+79	88	decide to check out the outer entrance to the cave again
+83	85	stay and try to make friends with the primitive people
+83	84	return to the hill and try to find your way back to the Cave of Time
+88	90	go back into the cave
+88	91	remain outside
+92	56
+93	31	take the first tunnel
+93	32	take a tunnel further along the way
+94	96	stay on until Gettysburg
+94	100	get off at Parkersville
+104	107	decide to stay at home and continue to work for Uncle Ted
+104	109	decide to be indentured to be an apprentice in Mr. Nelson's printing business
+106	111	try to run past the guard and escape
+106	113	tell him you are innocent
