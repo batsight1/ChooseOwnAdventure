@@ -16,7 +16,7 @@ def InputValid(_input):
 
 def InputLoop(_input):
     while not InputValid(_input):
-        print("Invalid")
+        #print("Invalid")
         _input = input("Input: ")
         InputLoop(_input)
     return _input

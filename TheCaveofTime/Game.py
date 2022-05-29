@@ -85,8 +85,25 @@ def GameLoop():
             break
         
         cls()
+    if(gameover):
+        print("This is the End")
 
-GameLoop()
+def MainMenu():
+    print("Main Menu")
+    print("Welcome to the Choose Your Own Adventure Game\n Please Select the Game you would like to play")
+    print("1) The Cave of Time")
+    #QuestionLoop
+    while True:
+        ans = InputLoop("Enter Game")
+        if(ans=="q"): #Quit
+            print("Game Quit")
+            break
+        elif(ans=="1"):
+            print("The Cave of Time selected")
+            break
 
-if(gameover):
-    print("This is the End")
+#GameLoop()
+MainMenu()
+
+
+    
